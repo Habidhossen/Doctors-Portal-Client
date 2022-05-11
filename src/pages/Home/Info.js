@@ -6,7 +6,7 @@ import InfoCard from "./InfoCard";
 
 const Info = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
       <InfoCard
         cardTitle="Opening Hours"
         bgColor="bg-gradient-to-r from-secondary to-primary"
@@ -27,7 +27,7 @@ const Info = () => {
         cardDesc="+000 123 456789"
         cardIcon={phone}
       />
-    </div>
+    </section>
   );
 };
 

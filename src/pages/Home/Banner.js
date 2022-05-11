@@ -5,7 +5,7 @@ import PrimaryBtn from "../Shared/PrimaryBtn";
 
 const Banner = () => {
   return (
-    <div
+    <section
       className="hero min-h-screen"
       style={{
         backgroundImage: `url(${bg})`,
@@ -25,7 +25,7 @@ const Banner = () => {
           <PrimaryBtn>Get Started</PrimaryBtn>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
