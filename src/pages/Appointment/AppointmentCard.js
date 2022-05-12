@@ -4,9 +4,9 @@ const AppointmentCard = ({ service }) => {
   const { name, slots } = service;
 
   return (
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body items-center text-center">
-        <h2 class="text-xl font-semibold text-secondary">{name}</h2>
+    <div className="card bg-base-100 shadow-xl">
+      <div className="card-body items-center text-center">
+        <h2 className="text-xl font-semibold text-secondary">{name}</h2>
         <p className="text-sm font-normal text-black uppercase">
           {slots.length ? (
             slots[0]
@@ -21,7 +21,7 @@ const AppointmentCard = ({ service }) => {
           disabled={slots.length === 0}
           //   onClick={() => setTreatment(service)}
           htmlFor="booking-modal"
-          class="btn btn-secondary font-bold uppercase text-white"
+          className="btn btn-secondary font-bold uppercase text-white"
         >
           Book Appointment
         </label>
