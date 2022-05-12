@@ -1,5 +1,4 @@
 import React from "react";
-import BookingModal from "./BookingModal";
 
 const AppointmentCard = ({ service }) => {
   const { name, slots } = service;
@@ -18,11 +17,11 @@ const AppointmentCard = ({ service }) => {
         <p className="text-xs font-normal text-black uppercase mb-3">
           {slots.length} {slots.length > 1 ? "spaces" : "space"} available
         </p>
-        {/* <PrimaryBtn for>Book Appointment</PrimaryBtn> */}
         <label
-          onClick={() => BookingModal(service)}
-          for="booking-modal"
-          class=" font-bold text-sm uppercase text-white py-3.5 px-4 rounded-lg bg-gradient-to-r from-secondary to-primary"
+          disabled={slots.length === 0}
+          //   onClick={() => setTreatment(service)}
+          htmlFor="booking-modal"
+          class="btn btn-secondary font-bold uppercase text-white"
         >
           Book Appointment
         </label>

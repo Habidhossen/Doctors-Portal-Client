@@ -1,6 +1,7 @@
+import { format } from "date-fns";
 import React from "react";
 
-const BookingModal = () => {
+const BookingModal = ({ date }) => {
   return (
     <div>
       <input type="checkbox" id="booking-modal" class="modal-toggle" />
@@ -15,7 +16,8 @@ const BookingModal = () => {
           <h3 class="font-bold text-lg">Cavity Protection</h3>
           <form action="">
             <input
-              placeholder="April 30, 2020"
+              value={format(date, "PPP")}
+              disabled
               class="input input-bordered w-full mb-5 mt-10"
             />
             <input
