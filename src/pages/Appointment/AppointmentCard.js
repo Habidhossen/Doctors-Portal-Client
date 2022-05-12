@@ -1,5 +1,5 @@
 import React from "react";
-import PrimaryBtn from "../Shared/PrimaryBtn";
+import BookingModal from "./BookingModal";
 
 const AppointmentCard = ({ service }) => {
   const { name, slots } = service;
@@ -18,7 +18,14 @@ const AppointmentCard = ({ service }) => {
         <p className="text-xs font-normal text-black uppercase mb-3">
           {slots.length} {slots.length > 1 ? "spaces" : "space"} available
         </p>
-        <PrimaryBtn>Book Appointment</PrimaryBtn>
+        {/* <PrimaryBtn for>Book Appointment</PrimaryBtn> */}
+        <label
+          onClick={() => BookingModal(service)}
+          for="booking-modal"
+          class=" font-bold text-sm uppercase text-white py-3.5 px-4 rounded-lg bg-gradient-to-r from-secondary to-primary"
+        >
+          Book Appointment
+        </label>
       </div>
     </div>
   );

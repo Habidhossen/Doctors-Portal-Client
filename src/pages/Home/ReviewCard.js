@@ -4,12 +4,12 @@ const ReviewCard = ({ review }) => {
   const { name, reviewMsg, location, img } = review;
 
   return (
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
+    <div className="card bg-base-100 shadow-xl">
+      <div className="card-body">
         <p className="ext-base font-normal text-black">{reviewMsg}</p>
-        <div class="card-actions justify-start items-center gap-5 mt-4">
-          <div class="avatar">
-            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <div className="card-actions justify-start items-center gap-5 mt-4">
+          <div className="avatar">
+            <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src={img} />
             </div>
           </div>

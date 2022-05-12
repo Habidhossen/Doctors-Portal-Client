@@ -36,14 +36,14 @@ const Service = () => {
       </div>
 
       {/* exceptional dental care part */}
-      <div class="hero min-h-screen px-52 mt-32">
-        <div class="hero-content flex-col lg:flex-row gap-20">
-          <img src={treatment} class="max-w-md rounded-lg" />
+      <div className="hero min-h-screen px-52 mt-32">
+        <div className="hero-content flex-col lg:flex-row gap-20">
+          <img src={treatment} className="max-w-md rounded-lg" />
           <div>
-            <h1 class="text-5xl font-bold">
+            <h1 className="text-5xl font-bold">
               Exceptional Dental Care, on Your Terms
             </h1>
-            <p class="py-6 text-base font-normal">
+            <p className="py-6 text-base font-normal">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsumis that it has a more-or-less normal
