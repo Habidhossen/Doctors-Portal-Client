@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-center text-base font-normal text-black mx-auto mb-8">
+        <p className="text-center text-base font-normal text-accent mx-auto mb-8">
           Copyright 2022 All Rights Reserved
         </p>
       </div>
